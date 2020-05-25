@@ -2,9 +2,9 @@
   "name": "examples",
   "version": "1.0.0",
   "description": "main",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:dev": "webpack --mode development"
   },
   "repository": {
     "type": "git",
@@ -17,8 +17,17 @@
     "url": "https://github.com/sshappo/examples/issues"
   },
   "homepage": "https://github.com/sshappo/examples#readme",
-  "dependencies": {
-    "express": "^4.17.1",
-    "fs": "0.0.1-security"
+  "devDependencies": {
+    "clean-webpack-plugin": "^3.0.0",
+    "crypto": "^1.0.1",
+    "csp-html-webpack-plugin": "^4.0.0",
+    "html-webpack-exclude-assets-plugin": "0.0.7",
+    "html-webpack-plugin": "^4.3.0",
+    "obfuscator-loader": "^1.1.2",
+    "script-ext-html-webpack-plugin": "^2.1.4",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-obfuscator": "^0.28.2",
+    "webpack-subresource-integrity": "^1.4.1"
   }
 }
